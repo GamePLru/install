@@ -2,6 +2,10 @@
 ```
 wget https://raw.githubusercontent.com/GamePLru/install/master/install.sh:chmod 777 install.sh;bash install.sh;
 ```
+## Admin Login
+
+Username: admin@scriptgates.ru Password: scriptgates
+
 ## Manual Debian 8/9
 
 <div id="sp0895d212586f9d3a5138013c4bb544bd" class="text_spoiler" style=""><b><!--spoiler_text--></b><b><u><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Installing Gamepl V 8.5 on VDS hosting </font></font></u></b><br><br><span style="font-size:14px;"><b><u><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">First of all, we need to update the packages. </font><font style="vertical-align: inherit;">This is done by the command:</font></font></u></b></span><pre class="language-markup"><code class="undefined">apt-get update<font></font>
