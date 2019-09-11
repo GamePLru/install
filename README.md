@@ -36,10 +36,7 @@ apt-get install -y libssh2-php</code></pre><span style="font-size:14px;"><b><u><
 a2enmod rewrite<font></font>
 <font></font>
 Перезагружаем Apache командой:<font></font>
-service apache2 restart</code></pre><br><span style="font-size:14px;"><b><u><b> <span style="color:rgb(226,80,65);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Panel Installation</font></font></span></b></u></b></span><br><br><span style="font-size:14px;"><b><u><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> Download the panel and database:</font></font></b></u></b></span><pre class="language-markup"><code class="javascript">Логин ih1560707_gamepl<font></font>
-Пароль scriptgates<font></font>
-Панель ftp:<span class="comment">//193.124.176.46/gamepl/files/srv/gamepl.zip</span>
-База ftp:<span class="comment">//193.124.176.46/gamepl/files/srv/gamepl.sql</span></code></pre><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">We go to the server via FileZilla in the / var / www / html </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">folder. We delete index.html from there and upload the files from the downloaded archive. </font></font><br><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">While our panel is poured onto the server, you can install the database. </font><font style="vertical-align: inherit;">To do this, go to the site: http: // Site domain / phpmyadmin </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Log in using the username and password that you specified when installing phpmyadmin. </font></font><br><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go to the "Databases" section, and create a database. </font></font><br><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563804040_scriptgates_ruscreenshot_12.png"><img src="/uploads/posts/2019-07/medium/1563804040_scriptgates_ruscreenshot_12.png" class="fr-fic fr-dib" alt=""></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">And download the downloaded database. </font></font><br><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563804144_scriptgates_ruscreenshot_13.png"><br><img src="/uploads/posts/2019-07/medium/1563804144_scriptgates_ruscreenshot_13.png" class="fr-fic fr-dib" alt=""></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go to FileZilla and follow the path: / var / www / html / data and open the conf.ini file. </font></font><br><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">There we only change</font></font><pre class="language-markup"><code class="javascript"><span class="string">"domain"</span>:<span class="string">"host"</span> <span class="comment">// Ip/Домен машины</span>
+service apache2 restart</code></pre><br><span style="font-size:14px;"><b><u><b> <span style="color:rgb(226,80,65);"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Panel Installation</font></font></span></b></u></b></span><br><br><span style="font-size:14px;"><b><u><b><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">We go to the server via FileZilla in the / var / www / html </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">folder. We delete index.html from there and upload the files from the downloaded archive. </font></font><br><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">While our panel is poured onto the server, you can install the database. </font><font style="vertical-align: inherit;">To do this, go to the site: http: // Site domain / phpmyadmin </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Log in using the username and password that you specified when installing phpmyadmin. </font></font><br><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go to the "Databases" section, and create a database. </font></font><br><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563804040_scriptgates_ruscreenshot_12.png"><img src="/uploads/posts/2019-07/medium/1563804040_scriptgates_ruscreenshot_12.png" class="fr-fic fr-dib" alt=""></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">And download the downloaded database. </font></font><br><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563804144_scriptgates_ruscreenshot_13.png"><br><img src="/uploads/posts/2019-07/medium/1563804144_scriptgates_ruscreenshot_13.png" class="fr-fic fr-dib" alt=""></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go to FileZilla and follow the path: / var / www / html / data and open the conf.ini file. </font></font><br><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">There we only change</font></font><pre class="language-markup"><code class="javascript"><span class="string">"domain"</span>:<span class="string">"host"</span> <span class="comment">// Ip/Домен машины</span>
 <span class="string">"db_users_host"</span>:<span class="string">"127.0.0.1"</span> <span class="comment">//Ip адрес Mysql сервера</span>
 <span class="string">"db_users_name"</span>:<span class="string">"gamepl"</span> <span class="comment">// Название базу данных</span>
 <span class="string">"db_users_user"</span>:<span class="string">"root"</span> <span class="comment">// Пользователь</span>
@@ -80,127 +77,8 @@ service apache2 restart</code></pre><br><span style="font-size:14px;"><b><u><b> 
 cd host<font></font>
 <span class="keyword">mkdir</span> servers</code></pre><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Go to the root folder and download the game installer</font></font><br><pre class="language-markup"><code class="undefined">cd<font></font>
 <font></font>
-wget hos7.ru/gamepl/install.sh &amp;&amp; sh install.sh</code></pre><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Select item 2 </font></font><br><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563804630_scriptgates_rusnimok-ekrana-2019-06-24-v-7_42_33.png"><img src="/uploads/posts/2019-07/medium/1563804630_scriptgates_rusnimok-ekrana-2019-06-24-v-7_42_33.png" class="fr-fic fr-dib" alt=""></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Install only the "basic packages for the machine", then install FTP. </font><font style="vertical-align: inherit;">Java does not touch. </font></font><br><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Next, go to the main menu and go to the item "Installing games on the machine." </font><font style="vertical-align: inherit;">After the transition, select item 11. I chose the version of the lane - 1.9. </font></font><br><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">After downloading the file, go to the folder where the file was installed and rename it to "start.jar" </font></font><br><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563804684_scriptgates_rusnimok-ekrana-2019-06-24-v-7_50_15.png"><img src="/uploads/posts/2019-07/medium/1563804684_scriptgates_rusnimok-ekrana-2019-06-24-v-7_50_15.png" class="fr-fic fr-dib" alt=""></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Now let's check if we have java. </font><font style="vertical-align: inherit;">Checked by the command "java -version" </font></font><br><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563804721_scriptgates_rusnimok-ekrana-2019-06-24-v-7_52_20.png"><img src="/uploads/posts/2019-07/medium/1563804721_scriptgates_rusnimok-ekrana-2019-06-24-v-7_52_20.png" class="fr-fic fr-dib" alt=""></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Java is missing. </font><font style="vertical-align: inherit;">Install it with the command "apt-get install default-jre" </font></font><br><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563804749_scriptgates_rusnimok-ekrana-2019-06-24-v-7_52_36.png"><img src="/uploads/posts/2019-07/medium/1563804749_scriptgates_rusnimok-ekrana-2019-06-24-v-7_52_36.png" class="fr-fic fr-dib" alt=""></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">After installation, check availability. </font></font><br><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563804737_scriptgates_rusnimok-ekrana-2019-06-24-v-7_54_56.png"><img src="/uploads/posts/2019-07/thumbs/1563804737_scriptgates_rusnimok-ekrana-2019-06-24-v-7_54_56.png" class="fr-fic fr-dib" alt=""></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Next, go to the panel under the admin panel. </font><font style="vertical-align: inherit;">Go to the "Locations" and create a new location. </font><font style="vertical-align: inherit;">Next, go to the Physical server and create a new server. </font></font><br><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563804864_scriptgates_rusnimok-ekrana-2019-06-24-v-17_35_19.png"><img src="/uploads/posts/2019-07/medium/1563804864_scriptgates_rusnimok-ekrana-2019-06-24-v-17_35_19.png" class="fr-fic fr-dib" alt=""></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">I have such parameters.</font></font><br><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563804808_scriptgates_rusnimok-ekrana-2019-06-24-v-17_43_32.png"><img src="/uploads/posts/2019-07/medium/1563804808_scriptgates_rusnimok-ekrana-2019-06-24-v-17_43_32.png" class="fr-fic fr-dib" alt=""></a><font style="vertical-align: inherit;"></font><br><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563804875_scriptgates_rusnimok-ekrana-2019-06-24-v-17_46_28.png"><img src="/uploads/posts/2019-07/medium/1563804875_scriptgates_rusnimok-ekrana-2019-06-24-v-17_46_28.png" class="fr-fic fr-dib" alt=""></a><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563804878_scriptgates_rusnimok-ekrana-2019-06-24-v-17_47_33.png"><img src="/uploads/posts/2019-07/medium/1563804878_scriptgates_rusnimok-ekrana-2019-06-24-v-17_47_33.png" class="fr-fic fr-dib" alt=""></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Where versions </font></font><br><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1. Name of version </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2. Path where the kernel lies [/ host / servers / mineTHERE VERSION OF THE DOWNLOADED VERSION] </font></font><br><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Save and check. </font><font style="vertical-align: inherit;">To start the server correctly, you need to&nbsp; </font><a href="https://yadi.sk/d/Phzvs39V62nQpg" rel="noopener noreferrer external" target="_blank"><font style="vertical-align: inherit;">upload the file</font></a><font style="vertical-align: inherit;"> to: / var / www / folder with the site / engine / classes / games</font></font><br><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563804995_scriptgates_rusnimok-ekrana-2019-06-24-v-17_51_55.png"><img src="/uploads/posts/2019-07/medium/1563804995_scriptgates_rusnimok-ekrana-2019-06-24-v-17_51_55.png" class="fr-fic fr-dib" alt=""></a><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563805008_scriptgates_rusnimok-ekrana-2019-06-24-v-18_04_19.png"><img src="/uploads/posts/2019-07/medium/1563805008_scriptgates_rusnimok-ekrana-2019-06-24-v-18_04_19.png" class="fr-fic fr-dib" alt=""></a><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563805030_scriptgates_rusnimok-ekrana-2019-06-24-v-18_05_15.png"><img src="/uploads/posts/2019-07/medium/1563805030_scriptgates_rusnimok-ekrana-2019-06-24-v-18_05_15.png" class="fr-fic fr-dib" alt=""></a><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563805083_scriptgates_rusnimok-ekrana-2019-06-24-v-18_06_39.png"><img src="/uploads/posts/2019-07/medium/1563805083_scriptgates_rusnimok-ekrana-2019-06-24-v-18_06_39.png" class="fr-fic fr-dib" alt=""></a><font style="vertical-align: inherit;"></font><a href="https://yadi.sk/d/Phzvs39V62nQpg" rel="noopener noreferrer external" target="_blank"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font><br>
-
-	<div class="attachment_position">
-	
-		<a href="https://hos7.ru/engine/download.php?id=147" title="Downloads: 18">
-		
-			<div class="attachment_main"></div>
-			
-			<div class="attachment_block">
-			
-				<div class="attachment_block_2">
-				
-					<div class="attachment_block_3">
-
-						<div class="attachment_file">
-							<span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Download Now</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
-							Extension: zip
-						</font></font></div>
-
-						<div class="attachment_size"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
-							11.9 Mb
-						</font></font></div>
-
-						<div class="attachment_border"></div>
-
-					</div>
-					
-				</div>
-
-				<div class="icon_attachment"></div>
-				
-			</div>
-			
-		</a>
-		
-	</div>
-	
+wget https://raw.githubusercontent.com/GamePLru/install/master/install.sh &amp;&amp; sh install.sh</code></pre><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Select item 2 </font></font><br><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563804630_scriptgates_rusnimok-ekrana-2019-06-24-v-7_42_33.png"><img src="/uploads/posts/2019-07/medium/1563804630_scriptgates_rusnimok-ekrana-2019-06-24-v-7_42_33.png" class="fr-fic fr-dib" alt=""></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Install only the "basic packages for the machine", then install FTP. </font><font style="vertical-align: inherit;">Java does not touch. </font></font><br><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Next, go to the main menu and go to the item "Installing games on the machine." </font><font style="vertical-align: inherit;">After the transition, select item 11. I chose the version of the lane - 1.9. </font></font><br><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">After downloading the file, go to the folder where the file was installed and rename it to "start.jar" </font></font><br><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563804684_scriptgates_rusnimok-ekrana-2019-06-24-v-7_50_15.png"><img src="/uploads/posts/2019-07/medium/1563804684_scriptgates_rusnimok-ekrana-2019-06-24-v-7_50_15.png" class="fr-fic fr-dib" alt=""></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Now let's check if we have java. </font><font style="vertical-align: inherit;">Checked by the command "java -version" </font></font><br><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563804721_scriptgates_rusnimok-ekrana-2019-06-24-v-7_52_20.png"><img src="/uploads/posts/2019-07/medium/1563804721_scriptgates_rusnimok-ekrana-2019-06-24-v-7_52_20.png" class="fr-fic fr-dib" alt=""></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Java is missing. </font><font style="vertical-align: inherit;">Install it with the command "apt-get install default-jre" </font></font><br><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563804749_scriptgates_rusnimok-ekrana-2019-06-24-v-7_52_36.png"><img src="/uploads/posts/2019-07/medium/1563804749_scriptgates_rusnimok-ekrana-2019-06-24-v-7_52_36.png" class="fr-fic fr-dib" alt=""></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">After installation, check availability. </font></font><br><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563804737_scriptgates_rusnimok-ekrana-2019-06-24-v-7_54_56.png"><img src="/uploads/posts/2019-07/thumbs/1563804737_scriptgates_rusnimok-ekrana-2019-06-24-v-7_54_56.png" class="fr-fic fr-dib" alt=""></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Next, go to the panel under the admin panel. </font><font style="vertical-align: inherit;">Go to the "Locations" and create a new location. </font><font style="vertical-align: inherit;">Next, go to the Physical server and create a new server. </font></font><br><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563804864_scriptgates_rusnimok-ekrana-2019-06-24-v-17_35_19.png"><img src="/uploads/posts/2019-07/medium/1563804864_scriptgates_rusnimok-ekrana-2019-06-24-v-17_35_19.png" class="fr-fic fr-dib" alt=""></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">I have such parameters.</font></font><br><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563804808_scriptgates_rusnimok-ekrana-2019-06-24-v-17_43_32.png"><img src="/uploads/posts/2019-07/medium/1563804808_scriptgates_rusnimok-ekrana-2019-06-24-v-17_43_32.png" class="fr-fic fr-dib" alt=""></a><font style="vertical-align: inherit;"></font><br><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563804875_scriptgates_rusnimok-ekrana-2019-06-24-v-17_46_28.png"><img src="/uploads/posts/2019-07/medium/1563804875_scriptgates_rusnimok-ekrana-2019-06-24-v-17_46_28.png" class="fr-fic fr-dib" alt=""></a><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563804878_scriptgates_rusnimok-ekrana-2019-06-24-v-17_47_33.png"><img src="/uploads/posts/2019-07/medium/1563804878_scriptgates_rusnimok-ekrana-2019-06-24-v-17_47_33.png" class="fr-fic fr-dib" alt=""></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Where versions </font></font><br><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1. Name of version </font></font><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2. Path where the kernel lies [/ host / servers / mineTHERE VERSION OF THE DOWNLOADED VERSION] </font></font><br><br><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Save and check. </font><font style="vertical-align: inherit;">To start the server correctly, you need to&nbsp; </font><a href="https://yadi.sk/d/Phzvs39V62nQpg" rel="noopener noreferrer external" target="_blank"><font style="vertical-align: inherit;">upload the file</font></a><font style="vertical-align: inherit;"> to: / var / www / folder with the site / engine / classes / games</font></font><br><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563804995_scriptgates_rusnimok-ekrana-2019-06-24-v-17_51_55.png"><img src="/uploads/posts/2019-07/medium/1563804995_scriptgates_rusnimok-ekrana-2019-06-24-v-17_51_55.png" class="fr-fic fr-dib" alt=""></a><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563805008_scriptgates_rusnimok-ekrana-2019-06-24-v-18_04_19.png"><img src="/uploads/posts/2019-07/medium/1563805008_scriptgates_rusnimok-ekrana-2019-06-24-v-18_04_19.png" class="fr-fic fr-dib" alt=""></a><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563805030_scriptgates_rusnimok-ekrana-2019-06-24-v-18_05_15.png"><img src="/uploads/posts/2019-07/medium/1563805030_scriptgates_rusnimok-ekrana-2019-06-24-v-18_05_15.png" class="fr-fic fr-dib" alt=""></a><a class="highslide" href="https://hos7.ru/uploads/posts/2019-07/1563805083_scriptgates_rusnimok-ekrana-2019-06-24-v-18_06_39.png"><img src="/uploads/posts/2019-07/medium/1563805083_scriptgates_rusnimok-ekrana-2019-06-24-v-18_06_39.png" class="fr-fic fr-dib" alt=""></a><font style="vertical-align: inherit;"></font><a href="https://yadi.sk/d/Phzvs39V62nQpg" rel="noopener noreferrer external" target="_blank"><font style="vertical-align: inherit;"></font></a><font style="vertical-align: inherit;"></font><br>
 
 
-<script>
 
-	$(".attachment_position").on({
-
-		mouseenter: function () {
-
-			var attachment_target = $(this);
-
-			$(attachment_target).addClass('attachment_active');
-
-			setTimeout(function() {
-			
-				$(".attachment_active .attachment_block_2").css({
-					"margin": "6px 0 0 0"
-				});
-
-				$(".attachment_active .attachment_block_3").css({
-					"margin": "0 0 0 -17px"
-				});
-
-				setTimeout(function() {
-				
-					$(".attachment_active .icon_attachment").css({
-						"opacity": "1",
-						"visibility": "visible",
-						"-webkit-transform": "translateY(0)",
-						"-moz-transform": "translateY(0)",
-						"-ms-transform": "translateY(0)",
-						"transform": "translateY(0)"
-					});
-					
-				}, 400);
-				
-			}, 400);
-
-		}, mouseleave: function () {
-
-			var attachment_target = $(this);
-
-			setTimeout(function() {
-			
-				$(".attachment_active .attachment_block_2").css({
-					"margin": "6px 0 0 37px"
-				});
-
-				$(".attachment_active .attachment_block_3").css({
-					"margin": "0 0 0 4px"
-				});
-
-				$(attachment_target).removeClass('attachment_active');
-				
-			}, 400);
-
-			setTimeout(function() {
-			
-				$(".attachment_active .icon_attachment").css({
-					"opacity": "0",
-					"visibility": "hidden",
-					"-webkit-transform": "translateY(-20%)",
-					"-moz-transform": "translateY(-20%)",
-					"-ms-transform": "translateY(-20%)",
-					"transform": "translateY(-20%)"
-				});
-				
-			}, 0);
-
-			setTimeout(function() {
-			
-				$(".attachment_active .icon_attachment").css({
-					"opacity": "0",
-					"visibility": "hidden",
-					"-webkit-transform": "translateY(-20%)",
-					"-moz-transform": "translateY(-20%)",
-					"-ms-transform": "translateY(-20%)",
-					"transform": "translateY(-20%)"
-				});
-				
-			}, 800);
-    	
-		}
-		
-	});
-	
-</script>
 <br><br><span style="font-size:14px;"><b><!--spoiler_text_end--></b></span></div>
