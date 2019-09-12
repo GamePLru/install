@@ -228,8 +228,8 @@ install_gamepl()
 	cd $install/
 	rm index.html
 	wget $ScriptGates_ZIP
-	unzip GamePL-master.zip
-	rm -rf GamePL-master.zip
+	unzip master.zip
+	rm -rf master.zip
 	cd GamePL-master
 	mv * $install/
 	cd ~
