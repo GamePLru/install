@@ -232,6 +232,8 @@ install_gamepl()
 	rm -rf master.zip
 	cd GamePL-master
 	mv * $install/
+	cd $install/
+	wget https://raw.githubusercontent.com/GamePLru/GamePL/master/.htaccess
 	cd ~
 	wget $ScriptGates_SQL
 	sed -i 's/host/'$DOMAIN'/g' $install/data/conf.ini
