@@ -952,12 +952,13 @@ menu()
 	clear
 	wow
 	Info
-	log_t "• Добро пожаловать в установочное меню ${red}GamePL${BLUE} v.8.5${green} ✔ •"
+	log_t "• Добро пожаловать в установочное меню ${red}GamePL${BLUE} v.8.5${green} ✔ Leaked by https://blizzard-stresser.wtf •"
 	Info "• - ${red}1${green}  -  Установить ${red}GamePL${BLUE} v.8.5${green} на VDS ✔ •"
 	Info "• - ${red}2${green}  -  Настроить машину под игры ✔ •"
 	Info "• - ${red}3${green}  -  Установить игры на машину ✔ •"
 	Info "• - ${red}4${green}  -  Контакты разработчика ✔ •"
 	Info "• - ${red}0${green}  -  Выход ✔ •"
+	log_t "• Leaked by BLIZZARD-STRESSER.WTF  •${red}"
 	log_s
 	Info
 	read -p "Пожалуйста, введите пункт меню: " case
